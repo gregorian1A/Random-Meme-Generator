@@ -1,3 +1,3 @@
-# react-rkwp8o
+# Random meme generator
 
-[Edit on StackBlitz ⚡️](https://stackblitz.com/edit/react-rkwp8o)
+As the name implies, it generates images randomly and allows you to place text either at the top, middle or bottom of the image.
