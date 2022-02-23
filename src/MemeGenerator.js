@@ -63,11 +63,13 @@ const MemeGenerator = () => {
             placeholder="enter bottom text here"
           />
           <br />
+          <div className="btn-section">
           <button onClick={shuffleImage}>Randon Image</button>
           <br />
           <button onClick={clearText} className="clear">
             Clear text
             </button>
+            </div>
         </form>
       </div>
   

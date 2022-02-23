@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
 * {
   box-sizing: border-box;
 }
@@ -5,13 +7,14 @@
 body {
   margin: 0 0 0 30px;
   background-color: whitesmoke;
+  font-family: 'Poppins';
 }
 nav {
   display: flex;
   flex-direction: row;
   height: 100px;
   justify-content: center;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
 }
 
 nav h1 {
@@ -137,9 +140,11 @@ input {
   text-align: center;
 }
 
-@media only screen and (max-width: 750px) {
+@media (max-width: 750px) {
   nav {
     margin-bottom: 0;
+    margin-top: 10px;
+    height: 50px;
   }
 
   body {
@@ -153,7 +158,10 @@ input {
   .meme-form {
     display: flex;
     flex-direction: column-reverse;
-    margin-top: 40px;
+    margin-top: 0;
+  }
+  .meme {
+    margin: 0;
   }
   .meme > img {
     height: 300px;
@@ -176,6 +184,7 @@ input {
     margin-top: 10px;
     border: 2px solid black;
     height: 30px;
+    font-size: 20px;
   }
   .meme-form button {
     width: 90%;
@@ -186,20 +195,29 @@ input {
   .meme-form .clear {
     margin-top: 0;
   }
+  .form {
+    margin-top: 0;
+  }
+  .btn-section > button {
+    height: 30px;
+    padding: 5px;
+    font-size: 20px;
+    border-radius: 0;
+  }
 }
 
 @media only screen and (max-width: 1024px) {
   .app {
     height: 100vh;
   }
- 
+
   .meme-form {
     display: flex;
     flex-direction: column;
     margin-top: 40px;
     height: 100%;
   }
-   .meme {
+  .meme {
     margin-left: 30px;
     margin-right: 30px;
   }
