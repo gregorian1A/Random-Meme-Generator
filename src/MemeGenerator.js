@@ -30,6 +30,12 @@ const MemeGenerator = () => {
   }
   return (
     <div className="meme-form">
+        <div className="meme">
+        <img src={randomImage} />
+        <h3 className="top">{text.topText}</h3>
+        <h3 className="mid">{text.midText}</h3>
+        <h3 className="bottom">{text.bottomText}</h3>
+      </div>
       <div className="form">
         <form>
           <input
@@ -64,12 +70,7 @@ const MemeGenerator = () => {
             </button>
         </form>
       </div>
-      <div className="meme">
-        <img src={randomImage} />
-        <h3 className="top">{text.topText}</h3>
-        <h3 className="mid">{text.midText}</h3>
-        <h3 className="bottom">{text.bottomText}</h3>
-      </div>
+  
     </div>
   )
 }
